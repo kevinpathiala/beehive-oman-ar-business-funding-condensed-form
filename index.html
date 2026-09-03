@@ -2715,7 +2715,7 @@ const App = () => {
       {!done && stepIdx === 0 && (
         <div className="card-head">
           <h2>تحقّق من أهليتك للتمويل</h2>
-          <p className="card-sub">يستمر الأمر نحو دقيقتين.</p>
+          <p className="card-sub">يستغرق الأمر نحو دقيقتين.</p>
         </div>
       )}
       {!done && started && stepIdx > 0 && hasCachedData && (
@@ -2779,8 +2779,8 @@ const App = () => {
                 {submitting ? <><span className="spinner" /> جارٍ الإرسال...</> : ((current.id === 'contact' && contactPage === 1) ? 'اعرف أهليتي' : 'متابعة')}
               </button>
             </div>
-            {(current.id === 'revenue' || current.id === 'loan') && <p className="reassurance-note reassurance-note--footer">تُستخدم فقط للتحقق من أهليتك. ولا تُشارك مع أي طرف.</p>}
-            {current.id === 'contact' && <p className="reassurance-note reassurance-note--footer">لن نرسل لك رسائل مزعجة، فقط تواصل للحديث عن أهليتك للتمويل.</p>}
+            {(current.id === 'revenue' || current.id === 'loan') && <p className="reassurance-note reassurance-note--footer">تُستخدم بياناتك فقط للتحقق من أهليتك، ولا تتم مشاركتها مع أي طرف.</p>}
+            {current.id === 'contact' && <p className="reassurance-note reassurance-note--footer">لا رسائل مزعجة، سنتواصل معك فقط بخصوص أهليتك للتمويل.</p>}
           </div>
         </div>
       )}
